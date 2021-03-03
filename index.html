@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="changebg/style.css">
+  <link rel="stylesheet" href="weather/css/owfont-regular.css">
+  <link rel="stylesheet" href="weather/css/style.css"> 
+  <link rel="stylesheet" type="text/css" href="quote/style.css">
+  <title>momentum</title>
+</head>
+<body>
+
+  <button class="bgbtn"></button>
+
+  <div class="basic_functional">
+    <time class="time"></time>
+    <div class="date"></div>
+    <h1>
+      <span class="greeting"></span>
+      <span class="name" contenteditable="true"></span>
+    </h1>
+    <h2>What Is Your Focus For Today?</h2>
+    <h2 class="focus" contenteditable="true"></h2>    
+  </div>
+
+  <div class="weather">
+    <div class="city" contenteditable="true">Ryazan</div>
+    <i class="weather-icon owf"></i>
+    <div class="temperature"></div>
+    <div class="humidity"></div>
+    <div class="wind_speed"></div>
+    <div class="weather-description"></div>
+  </div>
+
+  <div class="quote_container">
+    <button class="btn" id="get_random_joke" onclick="getJoke()"></button>
+    <figure class="quote">
+      <span style="display: none !important; opacity: 0 !important; width: 0 !important; height: 0 !important;">
+        <span class="disabled" id="response_icon_url">https://assets.chucknorris.host/img/avatar/chuck-norris.png</span>
+        <span class="disabled"  id="response_id">rugldKNtTl-SPHdNNK-seA</span>
+        <a class="disabled"  id="response_url"></a>        
+      </span>
+      <blockquote id="response_text">
+        Chuck Norris doesnt have AIDS but he gives it to people anyway.
+      </blockquote>
+    </figure>    
+  </div>  
+
+  <script src="script.js"></script>
+  <script type="text/javascript" src="changebg/script.js"></script>
+  <script type="text/javascript" src="quote/script.js"></script>
+  <script type="text/javascript" src="weather/script.js"></script>
+</body>
+</html>
